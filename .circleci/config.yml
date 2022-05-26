@@ -1,9 +1,8 @@
-version: 2.1
+version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node@14.17.6
+      - image: circleci/node@14.17.0
     steps:
-      - checkout
-      - run: npm install
-      - run: npm run test
+      - run: echo "A first hello"
+      - run: npm -v
